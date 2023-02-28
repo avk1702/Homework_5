@@ -27,7 +27,7 @@ double[] array = Array(Length);
 double min = array[0];
 double max = array[0];
 
-for ( int i = 0; i < Length; i++)
+for ( int i = 1; i < Length; i++)
 {
   if (array[i] < min)
   {
@@ -40,6 +40,6 @@ for ( int i = 0; i < Length; i++)
   
 }
 double diffMaxMin = max - min;
-Console.WriteLine("Разница между максимальным и минимальным элементом массива равна  " + diffMaxMin.ToString("F2"));
 
+Console.WriteLine("Разница между максимальным и минимальным элементом массива равна  " + diffMaxMin.ToString("F2"));
 
