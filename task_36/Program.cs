@@ -24,11 +24,11 @@ int Length = Prompt ("Длина массива:  ");
 int[] array = Array(Length);
 
 int sum = 0;
-for (int i = 0; i < Length; i++)
+for (int i = 1; i < Length; i = i + 2)
 
-  if (i % 2 != 0)
-  {
+  //if (i % 2 != 0)
+  //{
     sum = sum + array[i];
-  }
+  //}
 
 Console.WriteLine($" Сумма элементов, стоящих на нечётных позициях {sum}");
