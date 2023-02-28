@@ -17,6 +17,7 @@ int[] Array(int Length)
     array[i] = new Random().Next(0,99);
    
     Console.Write(array[i].ToString() + " ");
+    
   }
   return array;
 }
@@ -30,5 +31,5 @@ for (int i = 1; i < Length; i = i + 2)
   //{
     sum = sum + array[i];
   //}
-
+Console.WriteLine();
 Console.WriteLine($" Сумма элементов, стоящих на нечётных позициях {sum}");
