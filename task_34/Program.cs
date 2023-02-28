@@ -21,26 +21,23 @@ int[] Array(int Length)
   }
   return array;
 }
-int Length = Prompt ("Длина массива:  ");
-int[] array = Array(Length);
 
-//int CountEven(int[] array)
-//{
+int CountEven(int[] array)
+{
   int count = 0;
-  for (int i = 0; i < Length; i++)
+  for (int i = 0; i < array.Length; i++)
    
   if (array[i] % 2 == 0)
   {
     count++;
   }
-    
-    //return count;
-  //Console.WriteLine(count);
-   // Console.WriteLine($"Четных: {CountEven}");
-//}
-//Console.WriteLine(count);
-//int Length = Prompt ("Длина массива:  ");
-//int[] array = Array(Length);
-//Console.WriteLine(count);
 
-Console.WriteLine($" Количество четных чисел в массиве {count}");
+  return count;
+}
+
+int Length = Prompt ("Длина массива:  ");
+int[] array = Array(Length);
+//array = Array(Length);
+//Console.WriteLine(count);
+Console.WriteLine();
+Console.WriteLine($"Количество четных чисел в массиве {CountEven(array)}");

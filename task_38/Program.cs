@@ -41,5 +41,6 @@ for ( int i = 1; i < Length; i++)
 }
 double diffMaxMin = max - min;
 
+Console.WriteLine();
 Console.WriteLine("Разница между максимальным и минимальным элементом массива равна  " + diffMaxMin.ToString("F2"));
 

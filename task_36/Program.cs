@@ -30,6 +30,7 @@ for (int i = 1; i < Length; i = i + 2)
   //if (i % 2 != 0)
   //{
     sum = sum + array[i];
-  //}
+  
 Console.WriteLine();
 Console.WriteLine($" Сумма элементов, стоящих на нечётных позициях {sum}");
+
